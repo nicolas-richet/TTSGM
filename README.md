@@ -10,7 +10,7 @@ This is the official implementation of our WACV 2027 paper.
   <img src="overview.png" alt="Overview of TTSGM" width="100%">
 </p>
 
-**Overview of TTSGM.** (a) Each text template defines class prompts, logits, a TTA loss, and a gradient $g_i$ with respect to the adapted vision-encoder weights. (b) The normalized template gradients $\{g_1, \dots, g_T\}$ are merged into an importance score $v$ and a direction score $s$. The mask $m$ keeps the top-$k$ coordinates of $v$. The final update applies the signed direction only on the masked coordinates.
+**Overview of TTSGM.** (a) Each text template defines class prompts, logits, a TTA loss, and a gradient $g_i$ with respect to the adapted vision-encoder weights. (b) The normalized template gradients $\{g_1, \dots, g_T\}$ are merged into an importance score $v$ and a direction score $s$. The mask $m$ keeps the top-$`k`$ coordinates of $v$. The final update applies the signed direction only on the masked coordinates.
 
 ## Results on Corruption Benchmarks
 
